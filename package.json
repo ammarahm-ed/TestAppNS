@@ -1,10 +1,10 @@
 {
-  "name": "TestAppNS",
+  "name": "NSBenchmarks",
   "main": "app/app.ts",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "^8.8.6"
+    "@nativescript/core": "napi"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",

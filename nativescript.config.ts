@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.TestAppNS',
+  id: 'org.nativescript.NSBenchmarks',
   appPath: 'app',
   appResourcesPath: 'App_Resources',
   android: {
