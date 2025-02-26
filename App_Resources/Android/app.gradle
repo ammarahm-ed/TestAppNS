@@ -3,6 +3,8 @@ dependencies {
 //  implementation 'androidx.multidex:multidex:2.0.1'
 }
 
+def BUILD_TOOLS_PATH = "$rootDir/build-tools"
+
 android {
   compileSdkVersion 34
   buildToolsVersion "34"
@@ -22,4 +24,13 @@ android {
   aaptOptions {
     additionalParameters "--no-version-vectors"
   }
+
+  packagingOptions {
+    jniLibs {
+        useLegacyPackaging true
+    }
+  }
+  
 }
+
+

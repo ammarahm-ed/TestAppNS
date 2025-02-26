@@ -1,9 +1,25 @@
 package org.nativescript;
 
 public class Benchmarks {
+    public Benchmarks() {}
+
     public static String Field = "Field";
 
     public static void voidMethod() {}
+
+    public void voidMethod1() {}
+
+    public String InstanceField = "Field";
+
+    public int IntFieldInstance = 1;
+
+    public static String passAndReturnString(String str) {
+        return str;
+    }
+
+    public static int multiply(int a, int b) {
+        return a + b;
+    }
 
     public static String returnString() {
         return "Method";
@@ -61,4 +77,10 @@ public class Benchmarks {
 
     // Method to accept a Java object
     public static void passDateObject(java.util.Date date) {}
+
+    public static void invokeCallback(BenchmarkCallback callback) {
+        for (int i = 0; i < 1000000; i++) {
+            callback.onCallback();
+        }
+    }
 }

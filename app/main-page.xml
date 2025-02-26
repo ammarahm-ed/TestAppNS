@@ -1,7 +1,7 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
     <ActionBar title="{{ engine }}" icon="" />
 
-    <StackLayout class="p-20" horizontalAlignment="center" width="100%">
+    <StackLayout class="p-20" width="100%">
         <Button text="Benchmark" tap="{{ onTap }}" class="-primary" />
         <Label text="{{ message }}" class="h2 text-center" textWrap="true" />
     </StackLayout>

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "napi"
+    "@nativescript/core": "^8.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -19,6 +19,8 @@
     "typescript": "~5.4.0"
   },
   "scripts": {
-    "start.android.release": "ns run android --release --key-store-path=debug.keystore --key-store-password=android --key-store-alias=androiddebugkey --key-store-alias-password=android"
-  }
+    "start.android.release": "ns run android --release --key-store-path=debug.keystore --key-store-password=android --key-store-alias=androiddebugkey --key-store-alias-password=android",
+    "build.android": "ns build android --release --key-store-path=debug.keystore --key-store-password=android --key-store-alias=androiddebugkey --key-store-alias-password=android --apk"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

@@ -14,6 +14,7 @@ module.exports = (env) => {
 		presets: ["module:metro-react-native-babel-preset"],
 		plugins: ['@babel/plugin-proposal-export-namespace-from']
 	  });
+	  config.optimization.minimize(false);
   });
 
   // Learn how to customize:
